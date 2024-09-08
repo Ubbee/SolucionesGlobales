@@ -28,8 +28,8 @@ export const Home = () => {
     fetchCoordinates();
   }, []);
 
-  const scrollToNosotros = () => {
-    const sectionElement = document.getElementById('nosotros');
+  const scrollToFormulario = () => {
+    const sectionElement = document.getElementById('formu');
     if (sectionElement) {
       sectionElement.scrollIntoView({ behavior: 'smooth' });
     }
@@ -43,7 +43,7 @@ export const Home = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Id molestiae maxime ipsum, culpa, sed error quas fuga voluptates blanditiis nulla,
             harum tempora inventore. Veritatis totam, tempore qui nemo pariatur blanditiis.</p>
-          <button onClick={scrollToNosotros}>Contactanos</button>
+          <button onClick={scrollToFormulario}>Contactanos</button>
         </div>
         <div className={styles.stitulo}>
           <h3>Nuestros Servicios</h3>

@@ -1,5 +1,6 @@
 import styles from './nav.module.css';
 import { Link, NavLink } from 'react-router-dom';
+import imgBurguer from './img/burguer.png'
 
 export const Nav = () => {
 
@@ -27,7 +28,7 @@ export const Nav = () => {
             <nav className={styles.nav}>
                 <a href="" className={styles.tit}>SG</a>
                 <div className={styles.burguer}>
-                    <img src="src/Components/Layout/Nav/img/burguer.png" alt="iconoBurguer" />
+                    <img src={imgBurguer} alt="iconoBurguer" />
                     <ul className={styles.lista}>
                         <li><Link onClick={scrollToNosotros}>Nosotros</Link></li>
                         <li><Link onClick={scrollToInicio}>Inicio</Link></li>
@@ -35,9 +36,9 @@ export const Nav = () => {
                     </ul>
                 </div>
                 <ul className={styles.uul}>
-                <li><Link onClick={scrollToNosotros}>Nosotros</Link></li>
-                        <li><Link onClick={scrollToInicio}>Inicio</Link></li>
-                        <li><Link onClick={scrollToFormulario}>Contacto</Link></li>
+                    <li><Link onClick={scrollToNosotros}>Nosotros</Link></li>
+                    <li><Link onClick={scrollToInicio}>Inicio</Link></li>
+                    <li><Link onClick={scrollToFormulario}>Contacto</Link></li>
                 </ul>
             </nav>
         </header>

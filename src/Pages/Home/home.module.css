@@ -37,9 +37,8 @@ section .home {
     border-radius: 6px;
     color: white;
     cursor: pointer;
-    width: 40%;
+    width: 50%;
     max-width: 200px;
-    box-sizing: border-box;
 }
 
 .home button:hover {

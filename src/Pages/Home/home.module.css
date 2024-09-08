@@ -149,7 +149,7 @@ section .home {
 }
 
 .nosotros .nos p {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.4vw, 1.6rem);
     font-weight: 100;
     text-align: center;
 }

@@ -11,7 +11,7 @@ export const Footer = () => {
         <div>
             <ul>
                 <li><a href=""><img src={imgIg} alt="icono Instagram" /></a></li>
-                <li><a href=""><img src={imgLinkedIn} alt="icono Linked In" /></a></li>
+                <li><a href=""><img src={imgLinkedIn} alt="icono LinkedIn" /></a></li>
                 <li><a href=""><img src={imgX} alt="icono X" /></a></li>
             </ul>
         </div>

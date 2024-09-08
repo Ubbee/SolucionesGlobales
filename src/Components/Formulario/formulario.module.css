@@ -1,0 +1,149 @@
+:root {
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 750px;
+    padding: 20px;
+}
+
+.formuT {
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #ffffff, #e6e6e6);
+}
+
+.titulo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.titulo h5 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.titulo p {
+    color: #6c757d;
+}
+
+.formu {
+    border-radius: 5px;
+}
+
+.nomYap {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nomYap div {
+    margin-bottom: 15px;
+}
+
+.nomYap div label {
+    margin-bottom: 6px;
+    color: #6c757d;
+}
+
+.nomYap div input, 
+.nomYap div textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.nomYap div input:focus, 
+.nomYap div textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.mail{
+    font-family: var(--font-family);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.mail label,
+.msj label{
+    color: #6c757d;
+    margin-right: 10px;
+}
+
+.mail input,
+.msj textarea{
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.msj textarea{
+    width: 90%;
+    height: 60px;
+}
+
+.mail input{
+    padding: 5px;
+    width: 350px;
+}
+
+.msj{
+    color: #6c757d;
+    font-family: var(--font-family);
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #0067d4;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+@media (min-width: 600px) {
+    .nomYap {
+        flex-direction: row;
+    }
+
+    .nomYap div {
+        margin-right: 15px;
+        flex: 1;
+    }
+
+    .nomYap div:last-child {
+        margin-right: 0;
+    }
+}
+

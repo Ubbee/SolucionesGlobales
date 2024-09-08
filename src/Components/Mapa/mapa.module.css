@@ -1,0 +1,10 @@
+.mapa {
+    margin: 0 auto;
+    padding-bottom: 100px;
+    background-color: #0B1215;
+    border-radius: 10px;
+    transform: translateY(-5vh);
+    height: 50vh;
+    width: 90%;
+    max-width: 1200px;
+}

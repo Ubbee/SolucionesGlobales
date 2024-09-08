@@ -54,6 +54,9 @@
     .footer ul li a img{
         transform: translateX(20px);
     }
+    .footer ul li a img:hover{
+        transform: translateX(20px);
+    }
     .footer .titf{
         transform: translateX(-30px);
     }

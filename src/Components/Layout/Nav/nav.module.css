@@ -120,6 +120,7 @@
     .burguer img {
         display: block;
         cursor: pointer;
+        transform: translateX(120px) translateY(10px);
     }
 
     .lista{

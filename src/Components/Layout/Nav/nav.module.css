@@ -26,6 +26,8 @@
 .nav li:hover a {
     color: #c5c5c5;
     transition: 0.1s;
+    transform: translateY(2px);
+    
 }
 
 .nav .uul li a {

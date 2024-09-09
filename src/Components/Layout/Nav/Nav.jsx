@@ -36,9 +36,9 @@ export const Nav = () => {
                     </ul>
                 </div>
                 <ul className={styles.uul}>
-                    <li><Link onClick={scrollToNosotros}>Nosotros</Link></li>
-                    <li><Link onClick={scrollToInicio}>Inicio</Link></li>
-                    <li><Link onClick={scrollToFormulario}>Contacto</Link></li>
+                    <li className={styles.lii}><Link onClick={scrollToNosotros}>Nosotros</Link></li>
+                    <li className={styles.lii}><Link onClick={scrollToInicio}>Inicio</Link></li>
+                    <li className={styles.lii}><Link onClick={scrollToFormulario}>Contacto</Link></li>
                 </ul>
             </nav>
         </header>

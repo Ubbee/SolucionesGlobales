@@ -7,7 +7,6 @@ export const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Capturar los valores del formulario
         const formData = {
             nombre: e.target.nombre.value,
             apellido: e.target.lastName.value,
@@ -15,20 +14,19 @@ export const Formulario = () => {
             mensaje: e.target.mensaje.value,
         };
 
-        // Configurar los parámetros de la plantilla
         const templateParams = {
-            firstName: formData.nombre,      // Correspondiente al campo [Nombre del Cliente]
-            lastName: formData.apellido,    // Correspondiente al campo [Apellido del Cliente]
-            email: formData.email,          // Correspondiente al campo [Correo Electrónico del Cliente]
-            message: formData.mensaje       // Correspondiente al campo {{message}} en tu plantilla
+            firstName: formData.nombre,
+            lastName: formData.apellido,
+            email: formData.email,
+            message: formData.mensaje
         };
 
         emailjs
             .send(
-                'SG_DeliveryMail', // Reemplaza con tu Service ID de EmailJS
-                'template_SG',     // Reemplaza con tu Template ID de EmailJS
+                'SG_DeliveryMail',
+                'template_SG',
                 templateParams,
-                'PEVbjQduv9UGAuaVH' // Reemplaza con tu User ID de EmailJS
+                'PEVbjQduv9UGAuaVH'
             )
             .then(
                 (result) => {
@@ -40,8 +38,6 @@ export const Formulario = () => {
                     alert('Hubo un error al enviar el mensaje.');
                 }
             );
-
-        // Opcional: Reiniciar el formulario después de enviar
         e.target.reset();
     };
 

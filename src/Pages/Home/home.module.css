@@ -79,12 +79,10 @@ section .home {
 
 .servicios div {
     width: 30%;
-    box-sizing: border-box;
     margin-top: 70px;
-    display: flex;
     flex-direction: column;
     box-shadow: 4px 6px 12px 1px rgba(0, 0, 0, 0.75);
-    padding: 10px;
+    padding: 15px 25px;
     border-radius: 5px;
     border: 0.1px solid rgb(230, 230, 230);
 }
@@ -96,9 +94,6 @@ section .home {
     transition: 0.3s;
 }
 
-.servicios div p {
-    width: 100%;
-}
 
 /* ---------------------------SOBRE-NOSOTROS------------------------------- */
 
@@ -107,7 +102,6 @@ section .home {
     color: white;
     display: flex;
     margin-top: 5vh;
-    justify-content: space-between;
     padding: 3vh 3vw;
 }
 
@@ -122,9 +116,9 @@ section .home {
     z-index: 1;
     text-align: center;
     transform: translateY(-85px);
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2.1vw, 2.1rem);
     ;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 
@@ -161,7 +155,7 @@ section .home {
     .nosotros {
         flex-direction: column;
         align-items: center;
-        height: 100%;
+        height: 900px;
     }
 
     .nosotros .nos {
@@ -236,5 +230,9 @@ section .home {
     .servicios div {
         width: 75%;
         margin: 10px;
+    }
+
+    .nosotros {
+        height: 1000px;
     }
 }

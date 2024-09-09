@@ -64,7 +64,7 @@ body {
     color: #6c757d;
 }
 
-.nomYap div input, 
+.nomYap div input,
 .nomYap div textarea {
     border-radius: 5px;
     border: 1px solid rgb(187, 187, 187);
@@ -74,42 +74,47 @@ body {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.nomYap div input:focus, 
+.nomYap div input:focus,
 .nomYap div textarea:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
-.mail{
+.mail {
     font-family: var(--font-family);
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
+
 .mail label,
-.msj label{
+.msj label {
     color: #6c757d;
     margin-right: 10px;
 }
 
 .mail input,
-.msj textarea{
+.msj textarea {
     border-radius: 5px;
     border: 1px solid rgb(187, 187, 187);
+    font-family: var(--font-family);
+    padding: 5px;
 }
 
-.msj textarea{
+.msj textarea {
     width: 90%;
     height: 60px;
+    font-size: 1rem;
 }
 
-.mail input{
+.mail input {
     padding: 5px;
-    width: 350px;
+    width: 88%;
+    font-size: 1rem;
 }
 
-.msj{
+.msj {
     color: #6c757d;
     font-family: var(--font-family);
     margin-right: 10px;
@@ -145,5 +150,15 @@ button:hover {
     .nomYap div:last-child {
         margin-right: 0;
     }
+
 }
 
+@media (max-width: 700px) {
+    .mail input {
+        width: 100%;
+    }
+
+    .msj textarea {
+        width: 100%;
+    }
+}

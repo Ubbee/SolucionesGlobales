@@ -1,10 +1,17 @@
-.mapa {
+.sectorMapa {
+    display: flex;
     margin: 0 auto;
     padding-bottom: 100px;
-    background-color: #0B1215;
     border-radius: 10px;
-    transform: translateY(-5vh);
-    height: 50vh;
-    width: 90%;
-    max-width: 1200px;
+    transform: translateY(-1vh);
+    width: 80%;
+    height: 120%;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sectorMapa {
+        width: 90%;
+        padding-bottom: 310px;
+    }
 }

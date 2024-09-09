@@ -13,8 +13,8 @@ L.Icon.Default.mergeOptions({
 });
 
 export const Mapa = ({ position }) => (
-    <div className={styles.mapa}>
-        <MapContainer className={styles.mapa} center={position} zoom={14.5}>
+    <div className={styles.sectorMapa}>
+        <MapContainer className={styles.sectorMapa} center={position} zoom={14.5}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
